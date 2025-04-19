@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@font-face {
+    font-family: 'aquire';
+    src: url('./fonts/aquire/Aquire-BW0ox.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#left{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(36, 35, 35);
+}
+#right{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(49, 48, 48);
+    box-shadow: -8px 0 10px rgba(0, 0, 0, 0.9); /* subtle shadow on the left side */
+}
+#top-bar {
+    position: absolute;
+    top: 8%;
+    left: 16%;
+    height: 86vh;
+    width: 70vw;
+    background-color: #f0f0f0;
+    box-shadow: -16px 16px 09px rgba(0, 0, 0, 0.3);
+   
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+#yellow{
+    height: 100%;
+    width: 80%;
+    background-color: #d6b790;
+    overflow: hidden;
+    position: relative;
+   
+}
+#white{
+    height: 100%;
+    width: 20%;
+    background-color: #fff;
+    position: relative;
+}
+#image_div {
+    position: absolute;
+    z-index: 89;
+    height: 64vh;
+    width: 22vw;
+    background-color: #f1f1f1;
+    top: 20%;
+    right: 20%;
+    box-shadow: 0px 18px 9px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.image-slider > img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#TEXT{
+    /* background-color: #fff; */
+    position: absolute;
+    height: 36vh;
+    width:
+    100%;
+    rotate: -90deg;
+    z-index: 90;
+    top: 25%;
+    left:-10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 8vw; */
+    line-height: -1.10;
+    font-family: "aquire";
+}
+#text_h1{
+    /* position: absolute; */
+    /* background-color: red; */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12vw;
+    /* overflow: hidden; */
+    padding: 2v;
+    position: relative;
+    
+
+}
+#text_h1 h1{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 5vw;
+    font-weight: 900;
+
+   
+    
+}
+#text_h1 p{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    /* background-color: #fff; */
+    font-size: 20px;
+    right: 36%;
+    top: -7%;
+
+   
+}
+#text_h2{
+    height: 13vh;
+    width: 29vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5vw;
+    overflow: hidden;
+    margin-bottom: 10vw;
+    color: white;
+    
+
+}
+#text_h2 h1{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+#nav{
+    height: 5vh;
+    width: 46%;
+    position: absolute;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    rotate: -90deg;
+    left: -20%;
+    top: 45%;
+    font-family: "aquire";
+}
+#nav h6{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    padding: 20px;
+
+
+}
+.white{
+    color: white;
+}
+#social{
+    height: 5vh;
+    width: 46%;
+    position: absolute;
+    /* background-color: #852020;/ */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    rotate: 90deg;
+    right: 9%;
+    top: 50%;
+    font-family: "aquire";
+}
+#social h6{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 0.6vw;
+    text-transform: uppercase;
+    padding: 20px;
+
+
+}
+#number_line{
+    position: absolute;
+    height: 4vh;
+    width: 12vw;
+    top: 38%;
+    right: 38%;
+    /* background-color: #fff; */
+    z-index: 99;
+    border-top: 2px solid black; /* Only top border */
+}
+#number_line h5{
+    text-align: start;
+    padding: 20px 8px;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 3px;
+    font-family: "aquire";
+    
+}
+#number{
+    position: absolute;
+    /* background-color: #fff; */
+    top: -61%;
+    left: -17%;
+    font-family: "aquire";
+}
+#cross{
+    position: relative;
+    height: 4vh;
+    width: 2vw;
+    /* background-color: #633434; */
+    top: 36%;
+    right: -80%;
+    rotate: 45deg;
+}
+#cross i{
+    height: 100%;
+    width: 100%;
+    font-size: 1.7vw;
+    
+}
+
